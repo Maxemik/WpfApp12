@@ -1,0 +1,29 @@
+﻿<Window x:Class="WpfApp12.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Сравнение массивов" Height="300" Width="400">
+
+    <Grid>
+        <TextBlock Text="Введите элементы первого массива (через запятую):" Margin="10" FontWeight="Bold"/>
+        <!-- Заголовок для ввода первого массива -->
+        <TextBox x:Name="firstArrayTextBox" Margin="10,30,10,0" Height="30"/>
+        <!-- Поле для ввода первого массива -->
+
+        <TextBlock Text="Введите элементы второго массива (через запятую):" Margin="10,70,10,0" FontWeight="Bold"/>
+        <!-- Заголовок для ввода второго массива -->
+        <TextBox x:Name="secondArrayTextBox" Margin="10,100,10,0" Height="30"/>
+        <!-- Поле для ввода второго массива -->
+
+        <Button Content="Проверить" HorizontalAlignment="Left" VerticalAlignment="Bottom" Width="100" Click="CheckArrays_Click"/>
+        <!-- Кнопка для проверки массивов -->
+
+        <Button Content="Выход" HorizontalAlignment="Right" VerticalAlignment="Bottom" Width="75" Click="ExitButton_Click"/>
+        <!-- Кнопка выхода -->
+
+        <Button Content="О программе" HorizontalAlignment="Center" VerticalAlignment="Bottom" Width="100" Click="AboutButton_Click"/>
+        <!-- Кнопка о программе -->
+
+        <ListBox x:Name="resultsListBox" Margin="10,150,10,40"/>
+        <!-- Список для отображения результатов -->
+    </Grid>
+</Window>
